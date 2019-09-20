@@ -327,3 +327,19 @@ During training, I worked on his project. Browser online game on jsp pages.
   </pre>
 </details>
 
+### English Language
+
+I studied English at school and bookstore.  I started to study it seriously
+in 2018 thanks to the `LingoDeer` application and also to the YouTube channel
+[ENGLISH LANGUAGE FOR PLAYLISTS](https://www.youtube.com/channel/UC_3oKG5Szq-m6Xz-MjRZgpw)
+To consolidate the result I attended  [English Around](https://englisharound.by) courses 
+On the [EPAM](https://training.by/) I passed a test where I received an `A2 + level`.
+In my free time I communicate with native English speakers who studied Russian 
+with the help of `WhatsApp` and `Speaky`.
+
+<details> 
+  <summary>Proof </summary>
+    <img src="images/epam.jpg"
+      alt="epam english test"
+      style="align:center;" />
+</details> 
