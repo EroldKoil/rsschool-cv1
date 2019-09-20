@@ -11,3 +11,13 @@
  I decided to combine business with pleasure. I am ready to study hard, work 
  overtime to achieve the desired result.
 
+### My skills 
+My skills are small. I learned:
+ * *Java* 
+ * *MySQL*
+ * *JavaScript*
+ * *HTML*
+ * *CSS*
+ * *Web-Socket*
+ * *Git*
+
