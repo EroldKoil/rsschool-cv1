@@ -26,10 +26,10 @@ My skills are small. I learned:
 1. I graduated from the "Gomel Technical University named after Pavel
 Osipovich Sukhoi" with a degree in Engineering Technology.
 2. There I graduated from the magistracy.
-3. In 2017, I attended JAVA WEB-APPLICATIONS courses at [EPAM](https://training.by/) company
+3. I attended JAVA WEB-APPLICATIONS courses at [EPAM](https://training.by/) company in 2017
 
 <details> 
-  <summary>4. In the 3rd year of study, I became interested in programming and 
+  <summary>4. In the 3rd year of study I became interested in programming and 
 signed up for training on the website <a href="https://javarush.ru/">JAVARUSH.RU</a>.
 The subscription was valid for a year and I managed to reach level 19. 
 </summary>
@@ -47,7 +47,7 @@ The subscription was valid for a year and I managed to reach level 19.
 </details> 
 
 
-During training, I worked on his project. Browser online game on jsp pages. 
+During training I worked on his project. Browser online game on jsp pages. 
 
 <details> 
   <summary>Here is an example code for a game table: </summary>
@@ -326,6 +326,7 @@ During training, I worked on his project. Browser online game on jsp pages.
     </code>
   </pre>
 </details>
+
 
 ### English Language
 
