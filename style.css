@@ -1,0 +1,35 @@
+html{
+    color:white;
+}
+header {
+    background: #77ced9;
+    height: 68px;
+    position: fixed;
+    width: 1024px;
+    top: 0;
+    z-index: 5;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav_list a {
+    display: flex;
+    margin-right: 41px;
+    margin-top: 8px;
+    color: #fff;
+    text-transform: uppercase ;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav_list a:hover{
+    color: #daf7ff;
+}
+
