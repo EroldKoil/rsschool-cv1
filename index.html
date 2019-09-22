@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>HTML, CSS & Git Basics</title>
+</head>
+<body>
+    <div class="all_content">
+        <header>
+            <nav>
+                <ul class="nav_list">
+                    <a href="#about_me">About me</a>
+                    <a href="#skills"> My skills </a>
+                    <a href="#education"> My education </a>
+                    <a href="#english"> My English knowlages </a>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <section>
+                <div><img id="my_photo" src="images/photo.jpg" title="its_my" ></div>
+                <div class="info">
+                    <div>
+                        <p>Name: </p> <p>Nikolay Yakubov</p>
+                    </div>
+                    <div>
+                        <p>Age: </p> <p>25</p>
+                    </div>
+                    <div>
+                        <p>Profession: </p> <p>process engineer</p>
+                    </div>
+                    <div>
+                        <p>Favorite number: </p> <p> 9 </p>
+                    </div>
+                    <div>
+                        <p>Zodiac: </p> <p> Aries </p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <a class="anchor" name="about_me"></a>
+                    <h2>About me</h2>
+                    <p>
+                        The purpose of my training is to acquire skills, knowledge and experience for
+                        working in the field of program development. The meaning of this life is to
+                        learn as much as possible about this world. It takes a lot of time and money.
+                        To travel and develop, remote work suits me. And since I like programming,
+                        I decided to combine business with pleasure. I am ready to study hard, work
+                        overtime to achieve the desired result.
+                    </p>
+                </div>
+                <div class="content">
+                    <a class="anchor" name="english"></a>
+                    <h2>English Language</h2>
+                    <p>
+                        I studied English at school and bookstore.  I started to study it seriously
+                        in 2018 thanks to the <span>LingoDeer</span> application and also to the YouTube channel
+                        <a href="https://www.youtube.com/channel/UC_3oKG5Szq-m6Xz-MjRZgpw">ENGLISH LANGUAGE BY PLAYLISTS</a>
+                        To consolidate the result I attended  <a href="https://englisharound.by">English Around</a> courses
+                        On the <a href="https://training.by/">EPAM</a>  I passed a test where I received an <span>A2 + level</span>.
+                        In my free time I communicate with native English speakers who studied Russian
+                        with the help of <span>WhatsApp</span> and <span>Speaky</span>.
+                    </p>
+                </div>
+
+                <div class="content">
+                    <a  class="anchor" name="skills"></a>
+                    <h2>My skills </h2>
+                    <ul>
+                        <li> Java</li>
+                        <li>MySQL </li>
+                        <li>JavaScript </li>
+                        <li>HTML </li>
+                        <li>CSS </li>
+                        <li>Web-Socket </li>
+                        <li>Git </li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <a class="anchor" name="education"></a>
+                    <h2>Education</h2>
+                    <ol>
+                        <li>
+                            <p>
+                                I graduated from the "Gomel Technical University named after Pavel
+                                Osipovich Sukhoi" with a degree in Engineering Technology.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                There I graduated from the magistracy.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                I attended JAVA WEB-APPLICATIONS courses at
+                                <a class="thumbnail" href="https://training.by/"> EPAM
+                                    <span>
+                                        <img src="images/epam.jpg" />
+                                    </span>
+                                 </a> company in 2017
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In the 3rd year of study I became interested in programming and
+                                signed up for training on the website
+                                <a class="thumbnail" href="https://javarush.ru/">JAVARUSH.RU
+                                    <span>
+                                        <img src="images/javaRush.jpg" />
+                                    </span>
+                                </a>.
+                                The subscription was valid for a year and I managed to reach level 19.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Also trained on the platform <a class="thumbnail" href="https://www.sololearn.com/">SOLOLEARN.
+                                <span>
+                                    <img src="images/sololearn.jpg" />
+                                </span>
+                            </a>
+                            </p>
+                        </li>
+
+                    <li>
+                        <p>
+                            During training I worked on his project. Browser online game on jsp pages.
+                        </p>
+                        <details>
+                            <summary>Here is an example code for a game table: </summary>
+                            <pre>
+                                <code>
+
+                package entity;
+
+                import java.io.FileNotFoundException;
+                import java.util.ArrayList;
+                import java.util.Random;
+                import entity.cards.*;
+                import exceptions.HaveNoActionsException;
+                public class Table {
+
+                public Table(String name, String password, int maxPlayers) throws FileNotFoundException {
+                    this.name = name;
+                    this.password = password;
+                    this.maxPlayers = maxPlayers;
+                    this.timer = 60;
+                    this.numberNight = 0;
+                    this.allReadyToPlay = false;
+                    this.usersList = new ArrayList<>();
+                    this.actionsList = new Action[15];
+                    this.cemetery = new ArrayList<>();
+                    this.etap = 0;
+                    cardBeforeStart();
+
+                }
+                public void deleteUser(User user) 	{
+                    usersList.remove(user);
+                    user.setTable(null);
+                    if(usersList.size() < 1) {
+                        tablesList.remove(this);
+                    }
+                }
+                public void addCemetery(Card card) 	{
+                    cemetery.add(card);
+                }
+
+                public int getEtap() 	{
+                    return etap;
+                }
+                public void nextEtap() 	{
+                    if(etap==0) etap++;
+                        else etap = etap==1?2:1;
+                }
+
+                public static Table getTableByName (String name) {
+                    for (Table table:tablesList) {
+                        if(table.getName().equals(name))
+                        return table;
+                    }
+                    return null;
+                }
+
+                public User getUserByName (String name) {
+                    for (User user:usersList) {
+                        if(user.getNikName().equals(name))
+                            return user;
+                    }
+                    return null;
+                }
+                public void night() {
+                    nextEtap();
+                }}
+
+                                 </code>
+                            </pre>
+                        </details>
+                    </li>
+
+                    </ol>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <ul class="footer_list">
+                <a id="fb" href="#"><img src="ico/fb.png" title="facebook"></a>
+                <a id="mail" href="#"><img src="ico/mail.png" title="mail.ru"></a>
+                <a id="skype" href="#"><img src="ico/skype.png" title="skype"></a>
+                <a id="telegram" href="#"><img src="ico/telegram.png" title="telegram"></a>
+                <a id="twitter" href="#"><img src="ico/twitter.png" title="twitter"></a>
+                <a id="viber" href="#"><img src="ico/viber.png" title="viber"></a>
+                <a id="vk" href="#"><img src="ico/vk.png" title="vk"></a>
+                <a id="whatsapp" href="#"><img src="ico/whatsapp.png" title="whatsapp"></a>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
